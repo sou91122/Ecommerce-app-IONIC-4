@@ -1,0 +1,13 @@
+ion-list {
+  ion-item {
+    --border-color: #fff;
+    font-size: 14px;
+    span {
+      position: absolute;
+      right: 13px;
+      ion-icon {
+        vertical-align: text-top;
+      }
+    }
+  }
+}

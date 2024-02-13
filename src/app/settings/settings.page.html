@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)="changepassword()">
+      Change Password<span><ion-icon name="ios-arrow-forward"></ion-icon></span>
+    </ion-item>
+    <ion-item (click)="accountsettings()">
+      Account Settings<span><ion-icon name="ios-arrow-forward"></ion-icon></span>
+    </ion-item>
+  </ion-list>
+</ion-content>

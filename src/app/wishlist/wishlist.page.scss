@@ -1,0 +1,38 @@
+.product_wrapper {
+  .cart-item {
+    .cart-top {
+      p {
+        padding-right: 14px;
+        margin: 7px 0;
+      }
+    }
+    .cart-bottom {
+      text-align: center;
+      border-bottom: 1px solid #cac8c8;
+      border-top: 1px solid #cac8c8;
+      ion-button {
+        --background: transparent;
+        --box-shadow: none;
+        color: #000;
+        margin-top: 0;
+      }
+      .increment-block {
+        display: flex;
+        padding-top: 9px;
+        padding-left: 14px;
+        ion-icon {
+          font-size: 19px;
+          margin-top: 1px;
+
+          &:first-child {
+            margin-right: 14px;
+          }
+
+          &:last-child {
+            margin-left: 14px;
+          }
+        }
+      }
+    }
+  }
+}

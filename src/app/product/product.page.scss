@@ -1,0 +1,36 @@
+ion-content {
+  --background: #f5f5f5;
+}
+
+.product-display {
+  margin: 0 0 4px;
+  padding: 10px 16px 16px;
+  position: relative;
+  .single-product {
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    h6 {
+      margin: 4px 0;
+    }
+    p {
+      margin: 4px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+      height: 106px;
+    }
+  }
+}
+ion-footer {
+  text-align: center;
+  ion-button {
+    margin-top: 5px!important;
+    width: 46%!important;
+    font-size: .8rem!important;
+  }
+}

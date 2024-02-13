@@ -1,0 +1,18 @@
+<ion-content>
+  <div class="ion-padding">
+    <img src="assets/imgs/logo.png" alt="">
+    <ion-list>
+      <ion-item no-padding>
+        <ion-input type="email" placeholder="Email Address"></ion-input>
+      </ion-item>
+      <ion-item no-padding>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+      <div class="ion-text-end">
+        <ion-button class="btn-transparent" (click)="forgotpassword()">Forgot Password?</ion-button>
+      </div>
+      <ion-button style="width: 38%!important;" (click)="home()">Login</ion-button>
+    </ion-list>
+    <p>Don't have account? Click to <ion-button class="btn-transparent" (click)="register()">Register</ion-button></p>
+  </div>
+</ion-content>

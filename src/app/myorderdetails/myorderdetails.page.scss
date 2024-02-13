@@ -1,0 +1,72 @@
+.order-list {
+  background: #e8e8e8;
+  .list-wrapper {
+    background: #fff;
+    margin-bottom: 10px;
+    .ion-padding {
+      padding-bottom: 0;
+    }
+    h5 {
+      margin: 0 0 4px;
+      text-transform: capitalize;
+      font-size: 13px;
+    }
+    small {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 76%;
+      color: #424242;
+      float: left;
+      width: 100%;
+      margin-bottom: 3px;
+    }
+    h3 {
+      margin: 13px 0 10px;
+      font-size: 18px;
+    }
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 15px;
+      border-bottom: 1px solid #bdb4b4;
+      padding-bottom: 10px;
+      margin: 6px 0;
+      color: #1659bd;
+    }
+  }
+
+  .info-wrapper {
+    background: #fff;
+    margin-bottom: 12px;
+    h5 {
+      margin-bottom: 8px;
+      margin-top: 2px;
+      position: relative;
+      font-size: 16px;
+      text-transform: capitalize;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #ddd;
+      span {
+        color: #7b7b7b;
+        text-transform: capitalize;
+      }
+    }
+    ion-row {
+      ion-col {
+        h6 {
+          font-size: 14px;
+          margin: 4px 0;
+          font-weight: 100;
+        }
+        .highlight {
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+
+}

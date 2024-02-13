@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Cart</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="ios-arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end" class="btn-right" (click)="wishlist()">
+      <ion-icon name="heart"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" class="btn-right" (click)="home()">
+      <ion-icon name="home"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="product_wrapper">
+    <div class="cart-item">
+      <div class="cart-top">
+        <ion-row>
+          <ion-col size="4">
+            <img src="assets/imgs/products/pro-3.jpg" alt="">
+          </ion-col>
+          <ion-col size="8">
+            <p>IMODIUM® A-D Oral Solution Treatment</p>
+            <h6>$36.04</h6>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="cart-bottom">
+        <ion-row>
+          <ion-col size="4">
+            <div class="increment-block">
+              <ion-icon name="remove" (click)="DecreaseQty()"></ion-icon>
+              {{qty}}
+              <ion-icon name="add" (click)="IncreaseQty()"></ion-icon>
+            </div>
+          </ion-col>
+          <ion-col size="5">
+             <ion-button>Save Later</ion-button>
+          </ion-col>
+          <ion-col size="3">
+            <ion-button><ion-icon name="trash"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="cart-item">
+      <div class="cart-top">
+        <ion-row>
+          <ion-col size="4">
+            <img src="assets/imgs/products/pro-5.jpg" alt="">
+          </ion-col>
+          <ion-col size="8">
+            <p>Triple Hyaluronic Antioxidant Hydration Serum</p>
+            <h6>$46</h6>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="cart-bottom">
+        <ion-row>
+          <ion-col size="4">
+            <div class="increment-block">
+              <ion-icon name="remove" (click)="DecreaseQty()"></ion-icon>
+              {{qty}}
+              <ion-icon name="add" (click)="IncreaseQty()"></ion-icon>
+            </div>
+          </ion-col>
+          <ion-col size="5">
+            <ion-button>Save Later</ion-button>
+          </ion-col>
+          <ion-col size="3">
+            <ion-button><ion-icon name="trash"></ion-icon></ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+    <div class="product-total">
+      <h6>Total:<span> $82.04</span></h6>
+      <h6>Tax:<span> $20</span></h6>
+      <h5>Grand Total:<span>$102</span></h5>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer text-right>
+  <ion-button>Proceed(2)</ion-button>
+</ion-footer>

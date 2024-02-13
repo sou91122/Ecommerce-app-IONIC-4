@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>My Account</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <div class="top-section">
+   <h4>Elaine Cohen</h4>
+   <p>elaine.cohen@gmail.com</p>
+ </div>
+  <ion-list>
+    <ion-item (click)="myorder()">
+      My Order<span><ion-icon name="ios-arrow-forward"></ion-icon></span>
+    </ion-item>
+    <ion-item (click)="cart()">
+      My Cart<span><ion-icon name="ios-arrow-forward"></ion-icon></span>
+    </ion-item>
+    <ion-item (click)="wishlist()">
+      Wishlist<span><ion-icon name="ios-arrow-forward"></ion-icon></span>
+    </ion-item>
+    <ion-item>
+      My Address<span><ion-icon name="ios-arrow-forward"></ion-icon></span>
+    </ion-item>
+    <ion-item>
+      Logout<span><ion-icon name="ios-arrow-forward"></ion-icon></span>
+    </ion-item>
+  </ion-list>
+</ion-content>

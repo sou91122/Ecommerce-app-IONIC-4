@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="ios-arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end" class="btn-right" (click)="home()">
+      <ion-icon name="home"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" class="btn-right" (click)="wishlist()">
+      <ion-icon name="heart"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end" class="btn-right" (click)="cart()">
+      <ion-icon name="cart"></ion-icon>
+      <ion-badge>2</ion-badge>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="product-slider">
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="assets/imgs/product-details-1.jpg" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/product-details-2.jpg" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/product-details-3.jpg" alt="">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="product-content-top">
+    <h5>Lancôme La Vie Est Belle</h5>
+    <h3>$56</h3>
+    <span class="tax-link">tax Included</span>
+  </div>
+  <div class="product-content-bottom">
+    <h6>Description:</h6>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus ducimus eos ex fugit in, sequi voluptas.
+      Eaque ex necessitatibus pariatur, quia reiciendis reprehenderit voluptatem.</p>
+
+    <h6>Features:</h6>
+    <ul>
+      <li>Reprehenderit sit sunt voluptas</li>
+      <li>Cumque eaque et excepturi</li>
+      <li>Naiores molestias necessitatibus</li>
+      <li>Excepturi facilis fugit</li>
+      <li>Nihil odit optio perspiciatis quas</li>
+    </ul>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-button class="btn-wishlist"><ion-icon name="heart-empty"></ion-icon></ion-button>
+  <ion-button class="btn-cart">Add to Cart</ion-button>
+  <ion-button class="btn-buy">Buy Now</ion-button>
+</ion-footer>
